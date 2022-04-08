@@ -1,0 +1,21 @@
+*Create function computerPlay()
+ - Generate a random number from 1 - 3;
+ - Use this random number to determine the computer's Action 
+   (1 - ROCK, 2 - PAPER, 3- SCISSOR)
+ - Return the selection as a STRING 
+ - Assign computerSelection = computerPlay();
+
+*Create function playerPlay()
+ - Use a prompt for the user to input his Selection between Rock, Paper, and Scissor.
+ - Selection must be case insensitive
+ - Other selection must return, "Invalid Selection"
+ - Return the selection as a STRING
+ - Assign playerSelection
+
+
+*Create function playRound(playerSelection, computerSelection)
+ - This function will return a String depending on the comparison of 
+   playerSelection and computerSelection; 
+
+
+
