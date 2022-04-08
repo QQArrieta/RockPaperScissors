@@ -10,7 +10,7 @@
  - Selection must be case insensitive
  - Other selection must return, "Invalid Selection"
  - Return the selection as a STRING
- - Assign playerSelection
+ - Assign playerSelection = playerPlay()
 
 
 *Create function playRound(playerSelection, computerSelection)
