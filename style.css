@@ -1,0 +1,32 @@
+.container{
+    max-width: 500px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    gap: 40px;
+}
+
+.buttons{
+    display: flex;
+    padding: 24px;
+    gap: 40px;
+    background-color: white;
+}
+
+#results, #scoreBoard{
+    margin-top: 10px;
+}
+
+
+button{
+    padding: 24px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
