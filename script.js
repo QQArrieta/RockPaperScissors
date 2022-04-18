@@ -23,10 +23,18 @@ function computerPlay(){
     }
 }
 
+function declareWinner(){
+    if (win>loss){
+        alert("You have won the game.");
+    }
+    else if (loss>win){
+        alert("You have lost the game.");
+    }
+}
 
 function playRound(selection)
 {
-    computerSelection=computerPlay();
+   
     
 
     if (selection == "rock" && computerSelection =="rock")
@@ -87,8 +95,22 @@ function playRound(selection)
 }
 let win = 0;
 let loss = 0;
+const buttons = document.querySelectorAll(".button");
 
-document.images[0].onclick = () => playRound("rock");
-document.images[1].onclick = () => playRound("paper");
-document.images[2].onclick = () => playRound("scissors");
+
+Array.from(buttons).forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      playerSelection = this.id;
+      computerSelection = computerPlay();
+      playRound(playerSelection, computerSelection);
+      if (win === 5 || loss === 5) {
+       declareWinner();
+       location.reload();
+      }
+    });
+ });
+
+//*document.images[0].onclick = () => playRound("rock");
+//document.images[1].onclick = () => playRound("paper");
+//document.images[2].onclick = () => playRound("scissors");//
 
